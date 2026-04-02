@@ -1,0 +1,103 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: monospace, sans-serif;
+  text-align: center;
+  padding: 60px 10px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.site-logo {
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  letter-spacing: 8px;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+a {
+  color: #000000;
+  padding-bottom: 1px;
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: #faa55a;
+}
+
+/* Nav bar */
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* bone size */
+.nav-btn svg {
+  width: 100px;
+  height: 40px;
+}
+
+.nav-btn svg .bone-shape {
+  fill: none;
+  stroke: #f83d84;
+  stroke-width: 0;
+  transition: fill 0.15s, stroke 0.15s;
+}
+/* bone button text */
+.nav-btn svg .bone-label {
+  fill: #f83d84;
+  transition: fill 0.15s;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 3px;
+}
+
+/* hover or active bone color */
+.nav-btn.active svg .bone-shape,
+.nav-btn:hover svg .bone-shape {
+  fill: #faa55a;
+  stroke: #faa55a;
+}
+
+/* hover or active text color */
+.nav-btn.active svg .bone-label,
+.nav-btn:hover svg .bone-label {
+  fill: #fff;
+}
+
+/* Sections */
+.section {
+  max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
