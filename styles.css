@@ -91,6 +91,18 @@ a:hover {
   fill: #fff;
 }
 
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 40px 10px;
+  }
+
+  .nav-btn svg {
+    width: 80px;
+    height: 32px;
+  }
+}
+
 /* Sections */
 .section {
   max-width: 620px;
