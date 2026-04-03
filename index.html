@@ -28,12 +28,6 @@
       <text class="bone-label" x="171" y="75.6" text-anchor="middle" dominant-baseline="middle">About</text>
     </svg>
   </a>
-  <a class="nav-btn" href="#contact" onclick="showSection('contact', this)">
-    <svg viewBox="-2 -2 346 155" xmlns="http://www.w3.org/2000/svg">
-      <use href="#bone-path" class="bone-shape"/>
-      <text class="bone-label" x="171" y="75.6" text-anchor="middle" dominant-baseline="middle">Contact</text>
-    </svg>
-  </a>
   <a class="nav-btn" href="#gallery" onclick="showSection('gallery', this)">
     <svg viewBox="-2 -2 346 155" xmlns="http://www.w3.org/2000/svg">
       <use href="#bone-path" class="bone-shape"/>
@@ -45,21 +39,31 @@
       <use href="#bone-path" class="bone-shape"/>
       <text class="bone-label" x="171" y="75.6" text-anchor="middle" dominant-baseline="middle">Events</text>
     </svg>
+      </a>
+  <a class="nav-btn" href="#contact" onclick="showSection('contact', this)">
+    <svg viewBox="-2 -2 346 155" xmlns="http://www.w3.org/2000/svg">
+      <use href="#bone-path" class="bone-shape"/>
+      <text class="bone-label" x="171" y="75.6" text-anchor="middle" dominant-baseline="middle">Contact</text>
+    </svg>
   </a>
 
   <!-- add & edit sections here -->
   </div>
   <div id="about" class="section">
-    <p>Pinche Perro is an art and design collective.</p>
-  </div>
-  <div id="contact" class="section" style="display:none">
-    <p><a href="mailto:admin@pincheperro.art">admin@pincheperro.art</a></p>
+    <p>Pinche Perro is a creative studio made up of strays.</p>
+    <p>We like finding ways to misbehave in all kinds of mediums.</p>
   </div>
   <div id="gallery" class="section" style="display:none">
-    <p>Coming soon.</p>
+    <p>Gallery closed for cleaning, the dog peed on the floor again.</p>
+    <p>Check back later.</p>
   </div>
   <div id="events" class="section" style="display:none">
-    <p>Coming soon.</p>
+    <p>Dog is kenneled until further notice.</p>
+    <p>You'll hear loud barking when it's time to go out.</p>
+  </div>
+    <div id="contact" class="section" style="display:none">
+    <p>Microchip # +52 415 139 9273</p>
+    <p><a href="mailto:admin@pincheperro.art">admin@pincheperro.art</a></p>
   </div>
 </div>
 
@@ -67,7 +71,7 @@
   <script>
     function showSection(id, link) {
       document.querySelectorAll('.nav-btn').forEach(a => a.classList.remove('active'));
-      document.querySelectorAll('#about, #contact, #gallery, #events').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('#about, #gallery, #events, #contact').forEach(el => el.style.display = 'none');
       document.getElementById(id).style.display = 'block';
       link.classList.add('active');
     }
