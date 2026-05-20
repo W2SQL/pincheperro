@@ -74,8 +74,9 @@ a:hover {
   transition: fill 0.15s;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 75px;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 /* hover or active bone color */
